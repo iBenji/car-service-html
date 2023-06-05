@@ -1,0 +1,44 @@
+@mixin main-center {
+    padding-left: calc(50% - 1296 / 2);
+    padding-right: calc(50% - 1296 / 2);
+}
+
+@mixin secondary-center {
+    padding-left: calc(50% - 1557 / 2);
+    padding-right: calc(50% - 1557 / 2);
+}
+
+@mixin flexbox ($directionValue: row, $justifyValue: center, $alignValue: center, $gapValue: 0px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $directionValue;
+    justify-content: $justifyValue;
+    align-items: $alignValue;
+    gap: $gapValue;
+}
+
+@mixin title ($fontsizeValue: 64px) {
+    font-family: 'ReformaGroteskBoldC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fontsizeValue;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: $txt-secondary-color;
+}
+
+@mixin spacer {
+    width: 10px;
+    height: 10px;
+    background: $txt-secondary-color;
+    transform: rotate(-45deg);
+}
+
+@mixin subtitle {
+    font-family: 'ReformaGroteskMediumC', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: $txt-primary-color;
+}

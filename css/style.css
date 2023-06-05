@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "ReformaGroteskDemiC", sans-serif;
+  background-color: #1E1E1E;
+}
+
+.center {
+  padding-left: calc(50% - 648px);
+  padding-right: calc(50% - 648px);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+
+.top {
+  background-image: url(../img/jpg/top.jpg);
+}
+
+.header__nav {
+  margin-top: 40px;
+}
+
+.header__item {
+  font-family: "ReformaGroteskMediumC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+
+.intro__center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 168px;
+}
+.intro__center > .title {
+  font-family: "ReformaGroteskBoldC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #DB3138;
+}
+.intro__center > .spacer__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.intro__center > .spacer__container > .spacer {
+  width: 10px;
+  height: 10px;
+  background: #DB3138;
+  transform: rotate(-45deg);
+}
+.intro__center > .subtitle {
+  font-family: "ReformaGroteskMediumC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+  max-width: 437px;
+}
+.intro__center > .button {
+  font-family: "ReformaGroteskDemiC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #DB3138;
+}
+
+.footer__container {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container > p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.footer__item {
+  font-family: "ReformaGroteskMediumC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}/*# sourceMappingURL=style.css.map */

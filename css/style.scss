@@ -1,0 +1,111 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'ReformaGroteskDemiC', sans-serif;
+    background-color: #1E1E1E;
+}
+
+.center {
+    padding-left: calc(50% - 1296px / 2);
+    padding-right: calc(50% - 1296px / 2);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+.top {
+    background-image: url(../img/jpg/top.jpg);
+}
+
+.header__nav {
+    margin-top: 40px;
+}
+
+.header__item {
+    font-family: 'ReformaGroteskMediumC', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    @include flexbox(row, center, center, 40px);
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+}
+
+.intro__center {
+    @include flexbox(column, center, center, 40px);
+    margin-top: 168px;
+
+    >.title {
+        @include title(150px);
+    }
+
+    >.spacer__container {
+        @include flexbox(row, center, center, 30px);
+
+        >.spacer {
+            @include spacer;
+        }
+    }
+
+    >.subtitle {
+        @include subtitle;
+        text-align: center;
+        max-width: 437px;
+    }
+
+    >.button {
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        width: fit-content;
+        height: fit-content;
+        padding: 15px 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background-color: $txt-secondary-color;
+    }
+}
+
+
+
+.footer__container {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    @include flexbox(row, space-between, center, null);
+
+    >p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        opacity: 0.5;
+        color: #fff
+    }
+}
+
+.footer__item {
+    font-family: 'ReformaGroteskMediumC', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    @include flexbox(row, center, center, 40px);
+}
