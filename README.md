@@ -1,4 +1,4 @@
-# car-service-html
+# Car Sevice Website Template
 For portfolio
 # Description
-Made for portfolio, used with SCSS.
+Made for portfolio, created with SCSS.
