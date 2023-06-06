@@ -1,0 +1,279 @@
+@import 'vars.scss';
+@import 'mixins.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $FF-DemiC;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #1E1E1E;
+}
+
+.center {
+    padding-left: calc(50% - 1296px / 2);
+    padding-right: calc(50% - 1296px / 2);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+.top {
+    background-image: url(../img/jpg/top.jpg);
+    background-repeat: no-repeat;
+}
+
+.header__nav {
+    margin-top: 40px;
+}
+
+.header__item {
+    @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
+    @include flexbox(row, center, center, 40px);
+}
+
+.header__link {
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $txt-secondary-color;
+    }
+}
+
+.intro__center {
+    @include flexbox(column, center, center, null);
+    margin-top: 158px;
+}
+
+.title {
+    @include title(150px);
+}
+
+.spacer__container {
+    @include flexbox(row, center, center, 30px);
+}
+
+.spacer {
+    @include spacer;
+    margin-bottom: 40px;
+}
+
+.button {
+    @include setfont($FF-DemiC, style, 600, 24px, 140%, 0.05em);
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    background: linear-gradient(-60deg, #1E1E1E 50%, $txt-secondary-color 55%);
+    -webkit-animation: clrswipe 2s ease-in-out infinite;
+    -moz-animation: clrswipe 2s ease-in-out infinite;
+    animation: clrswipe 2s ease-in-out infinite;
+
+    &:hover {
+        background-size: 400% 400%;
+
+        @-webkit-keyframes clrswipe {
+            0% {
+                background-position: 50% 0%
+            }
+
+            50% {
+                background-position: 50% 100%
+            }
+
+            100% {
+                background-position: 50% 0%
+            }
+        }
+
+        @-moz-keyframes clrswipe {
+            0% {
+                background-position: 50% 0%
+            }
+
+            50% {
+                background-position: 50% 100%
+            }
+
+            100% {
+                background-position: 50% 0%
+            }
+        }
+
+        @keyframes clrswipe {
+            0% {
+                background-position: 50% 0%
+            }
+
+            50% {
+                background-position: 50% 100%
+            }
+
+            100% {
+                background-position: 50% 0%
+            }
+        }
+    }
+}
+
+.subtitle {
+    @include subtitle;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 437px;
+}
+
+.contacts {
+    margin-top: 103px;
+}
+
+.contacts__container {
+    @include flexbox(row, center, center, null);
+}
+
+.contacts__content {
+    @include flexbox(column, null, center, null);
+    padding: 50px 50px;
+    border: 1px solid #ffffff50;
+    border-left: 0;
+    flex-grow: 1;
+
+    >.contacts__text {
+        @include setfont($FF-DemiC, style, 600, 18px, 140%, 0.05em);
+        color: $txt-primary-color;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    >.contacts__subtext {
+        @include setfont($FF-DemiC, style, 600, 24px, 140%, 0.05em);
+        color: $txt-secondary-color;
+        text-transform: uppercase;
+        max-width: 265px;
+    }
+}
+
+.contacts__phones {
+    @include flexbox(column, null, center, null);
+
+    >a {
+        @include setfont($FF-DemiC, style, 600, 24px, 140%, 0.05em);
+        color: $txt-secondary-color;
+        text-transform: uppercase;
+        max-width: 265px;
+    }
+}
+
+.achivs {
+    margin-top: 180px;
+}
+
+.achivs__container {
+    @include flexbox(row, null, null, null);
+}
+
+.achivs__title {
+    @include setfont($FF-DemiC, style, 600, 52px, 140%, 0.05em);
+    color: $txt-primary-color;
+    max-width: 636px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.spacer__achivs {
+    @include flexbox(null, flex-start, null, null);
+
+    >.spacer {
+        margin-bottom: 60px;
+    }
+}
+
+.achivs__subtitle {
+    @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
+    color: $txt-primary-color;
+    max-width: 526px;
+}
+
+.achivs__wins {
+    @include flexbox(row, null, null, null);
+}
+
+.achivs__item {
+    border: 1px solid #898989;
+    padding: 24px 20px 34px 20px;
+}
+
+.place {
+    @include setfont($FF-DemiC, style, 600, 53px, 140%, 0.05em);
+    color: $txt-secondary-color;
+    text-transform: uppercase;
+    text-align: center;
+
+    >span {
+        font-size: 24px;
+    }
+}
+
+.place__desc {
+    @include setfont($FF-DemiC, style, 600, 16px, 140%, 0.05em);
+    color: $txt-primary-color;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 277px;
+}
+
+.achivs__second__col {
+    margin-top: 40px;
+}
+
+.achivs__item2 {
+    border-left: 0;
+}
+
+.achivs__item2:last-child {
+    border-left: 1px solid #898989;
+    padding-top: 13px;
+
+    >.place__desc {
+        margin-top: 22px;
+    }
+}
+
+// FOOTER HERE
+
+.footer__container {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    @include flexbox(row, space-between, center, null);
+
+    >p {
+        @include setfont($FF-DemiC, style, 600, 16px, 140%, 0.05em);
+        color: $txt-primary-color;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+}
+
+.footer__item {
+    @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
+    @include flexbox(row, center, center, 40px);
+}
+
+.footer__link {
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $txt-secondary-color;
+    }
+}
