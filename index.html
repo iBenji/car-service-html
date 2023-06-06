@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -51,18 +53,18 @@
             <section class="contacts">
                 <div class="contacts__container">
                     <div class="contacts__content">
-                        <p class="contacts__text">адрес:</p>
+                        <h2 class="contacts__text">адрес:</h2>
                         <address class="contacts__subtext">Санкт-Петербург, Ленина 37, Д-3</address>
                     </div>
                     <div class="contacts__content">
-                        <p class="contacts__text">телефон:</p>
+                        <h2 class="contacts__text">телефон:</h2>
                         <div class="contacts__phones">
                             <a class="contacts__subtext" href="tel:+78121234567">8 (812) 123-45-67</a>
                             <a class="contacts__subtext" href="tel:+79111234567">8 (911) 123-45-67</a>
                         </div>
                     </div>
                     <div class="contacts__content">
-                        <p class="contacts__text">Режим работы:</p>
+                        <h2 class="contacts__text">Режим работы:</h2>
                         <p class="contacts__subtext">пн-пт : 10:00 - 20:00</p>
                         <p class="contacts__subtext">сб-вск : 12:00 - 20:00</p>
                     </div>
@@ -142,7 +144,76 @@
             </section>
 
             <section class="minigallery">
-                
+                <div class="mgallery__container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="mgallery__cards center">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group">
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car1.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car2.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car3.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group">
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car1.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car2.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-transparent">
+                                            <img class="card-img" src="./img/jpg/car3.jpg" alt="Card image">
+                                            <div class="card-img-overlay">
+                                                <a href="#" class="card-btn"><h3>Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit.</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+
             </section>
         </main>
 
@@ -171,6 +242,12 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="./javascript/app.js"></script>
 </body>
 

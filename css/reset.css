@@ -214,7 +214,7 @@ html {
  */
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #fff;
 }
 
@@ -229,6 +229,7 @@ a:focus {
 a:active,
 a:hover {
     outline: 0;
+    color: #fff;
 }
 
 /**

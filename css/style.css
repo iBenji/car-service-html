@@ -37,7 +37,7 @@ body {
 
 .header__item {
   font-family: "ReformaGroteskMediumC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -160,7 +160,7 @@ body {
 }
 .contacts__content > .contacts__text {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
@@ -171,7 +171,7 @@ body {
 }
 .contacts__content > .contacts__subtext {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
@@ -189,7 +189,7 @@ body {
 }
 .contacts__phones > a {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
@@ -211,7 +211,6 @@ body {
 
 .achivs__title {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
   font-weight: 600;
   font-size: 52px;
   line-height: 140%;
@@ -233,7 +232,7 @@ body {
 
 .achivs__subtitle {
   font-family: "ReformaGroteskMediumC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -255,7 +254,7 @@ body {
 
 .place {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 600;
   font-size: 53px;
   line-height: 140%;
@@ -270,7 +269,7 @@ body {
 
 .place__desc {
   font-family: "ReformaGroteskDemiC", sans-serif;
-  font-style: style;
+  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
@@ -295,6 +294,94 @@ body {
 }
 .achivs__item2:last-child > .place__desc {
   margin-top: 22px;
+}
+
+.minigallery {
+  margin-top: 180px;
+}
+
+.mgallery__cards {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-group {
+  gap: 24px;
+}
+
+.card-img {
+  width: 416px;
+  height: 350px;
+}
+
+.card-img-overlay {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.card-btn {
+  font-family: "ReformaGroteskDemiC", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #fff;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 40px;
+  width: 286px;
+  bottom: 0;
+  background: linear-gradient(0deg, #1E1E1E 50%, #DB3138 55%);
+  animation: clrswipe2 2s ease-in-out infinite;
+}
+
+.card-btn:hover {
+  background-size: 200% 200%;
+}
+@keyframes clrswipe2 {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/svg/prev.svg);
+  width: 70px;
+  height: 70px;
+  transition: all 0.1s ease-in-out;
+}
+.carousel-control-prev-icon:active {
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/svg/next.svg);
+  width: 70px;
+  height: 70px;
+  transition: all 0.1s ease-in-out;
+}
+.carousel-control-next-icon:active {
+  width: 50px;
+  height: 50px;
+}
+
+.about {
+  margin-top: 250px;
 }
 
 .footer__container {
