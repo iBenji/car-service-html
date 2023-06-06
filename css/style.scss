@@ -39,7 +39,7 @@ body {
 }
 
 .header__item {
-    @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
+    @include setfont($FF-MediumC, normal, 500, 24px, 120%, 0.03em);
     @include flexbox(row, center, center, 40px);
 }
 
@@ -150,14 +150,14 @@ body {
     flex-grow: 1;
 
     >.contacts__text {
-        @include setfont($FF-DemiC, style, 600, 18px, 140%, 0.05em);
+        @include setfont($FF-DemiC, normal, 600, 18px, 140%, 0.05em);
         color: $txt-primary-color;
         margin-bottom: 20px;
         text-transform: uppercase;
     }
 
     >.contacts__subtext {
-        @include setfont($FF-DemiC, style, 600, 24px, 140%, 0.05em);
+        @include setfont($FF-DemiC, normal, 600, 24px, 140%, 0.05em);
         color: $txt-secondary-color;
         text-transform: uppercase;
         max-width: 265px;
@@ -168,7 +168,7 @@ body {
     @include flexbox(column, null, center, null);
 
     >a {
-        @include setfont($FF-DemiC, style, 600, 24px, 140%, 0.05em);
+        @include setfont($FF-DemiC, normal, 600, 24px, 140%, 0.05em);
         color: $txt-secondary-color;
         text-transform: uppercase;
         max-width: 265px;
@@ -184,7 +184,7 @@ body {
 }
 
 .achivs__title {
-    @include setfont($FF-DemiC, style, 600, 52px, 140%, 0.05em);
+    @include setfont($FF-DemiC, null, 600, 52px, 140%, 0.05em);
     color: $txt-primary-color;
     max-width: 636px;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ body {
 }
 
 .achivs__subtitle {
-    @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
+    @include setfont($FF-MediumC, normal, 500, 24px, 120%, 0.03em);
     color: $txt-primary-color;
     max-width: 526px;
 }
@@ -215,7 +215,7 @@ body {
 }
 
 .place {
-    @include setfont($FF-DemiC, style, 600, 53px, 140%, 0.05em);
+    @include setfont($FF-DemiC, normal, 600, 53px, 140%, 0.05em);
     color: $txt-secondary-color;
     text-transform: uppercase;
     text-align: center;
@@ -226,7 +226,7 @@ body {
 }
 
 .place__desc {
-    @include setfont($FF-DemiC, style, 600, 16px, 140%, 0.05em);
+    @include setfont($FF-DemiC, normal, 600, 16px, 140%, 0.05em);
     color: $txt-primary-color;
     text-transform: uppercase;
     text-align: center;
@@ -248,6 +248,118 @@ body {
     >.place__desc {
         margin-top: 22px;
     }
+}
+
+.minigallery {
+    margin-top: 180px;
+}
+
+.mgallery__cards {
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-group {
+    gap: 24px;
+}
+
+.card-img {
+    width: 416px;
+    height: 350px;
+}
+
+.card-img-overlay {
+    position: relative;
+    @include flexbox(null, center, null, null);
+    padding: 0;
+}
+
+.card-btn {
+    @include setfont($FF-DemiC, normal, 600, 18px, 140%, 0.05em);
+    color: $txt-primary-color;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 40px;
+    width: 286px;
+    bottom: 0;
+    background: linear-gradient(0deg, #1E1E1E 50%, $txt-secondary-color 55%);
+    -webkit-animation: clrswipe2 2s ease-in-out infinite;
+    -moz-animation: clrswipe2 2s ease-in-out infinite;
+    animation: clrswipe2 2s ease-in-out infinite;
+}
+
+.card-btn:hover {
+    background-size: 200% 200%;
+
+    @-webkit-keyframes clrswipe2 {
+        0% {
+            background-position: 50% 0%
+        }
+
+        50% {
+            background-position: 50% 100%
+        }
+
+        100% {
+            background-position: 50% 0%
+        }
+    }
+
+    @-moz-keyframes clrswipe2 {
+        0% {
+            background-position: 50% 0%
+        }
+
+        50% {
+            background-position: 50% 100%
+        }
+
+        100% {
+            background-position: 50% 0%
+        }
+    }
+
+    @keyframes clrswipe2 {
+        0% {
+            background-position: 50% 0%
+        }
+
+        50% {
+            background-position: 50% 100%
+        }
+
+        100% {
+            background-position: 50% 0%
+        }
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/svg/prev.svg);
+    width: 70px;
+    height: 70px;
+    transition: all .1s ease-in-out;
+    &:active {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/svg/next.svg);
+    width: 70px;
+    height: 70px;
+    transition: all .1s ease-in-out;
+    &:active {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.about {
+    margin-top: 250px;
 }
 
 // FOOTER HERE
