@@ -42,3 +42,12 @@
     line-height: 120%;
     color: $txt-primary-color;
 }
+
+@mixin setfont ($family: $FF-DemiC, $style: normal, $weight: 600, $size: 24px, $height: 120%, $spacing: 0.03em) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}

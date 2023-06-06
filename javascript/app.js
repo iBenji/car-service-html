@@ -1,7 +1,8 @@
-//Cloning Spacers
-$(document).ready(function() {
-    var e = $('.spacer');
-    for (var i = 0; i < 3; i++) {
-      e.clone().insertAfter(e);
-    }
-});
+//Get Actual Year
+
+const footerYearEl = document.querySelector(".year");
+
+let today = new Date();
+let year = today.getFullYear();
+
+footerYearEl.textContent = year;
