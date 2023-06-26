@@ -31,11 +31,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.header__nav {
+.header-nav {
   margin-top: 40px;
 }
 
-.header__item {
+.header-item {
   font-family: "ReformaGroteskMediumC", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -50,14 +50,14 @@ body {
   gap: 40px;
 }
 
-.header__link {
+.header-link {
   transition: color 0.2s ease-in-out;
 }
-.header__link:hover {
+.header-link:hover {
   color: #DB3138;
 }
 
-.intro__center {
+.intro-center {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -66,7 +66,7 @@ body {
   margin-top: 158px;
 }
 
-.title {
+.intro-title {
   font-family: "ReformaGroteskBoldC";
   font-style: normal;
   font-weight: 700;
@@ -76,7 +76,7 @@ body {
   color: #DB3138;
 }
 
-.spacer__container {
+.spacer-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -124,7 +124,7 @@ body {
   }
 }
 
-.subtitle {
+.intro-subtitle {
   font-family: "ReformaGroteskMediumC", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -140,7 +140,7 @@ body {
   margin-top: 103px;
 }
 
-.contacts__container {
+.contacts-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -148,7 +148,7 @@ body {
   align-items: center;
 }
 
-.contacts__content {
+.contacts-content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -158,7 +158,7 @@ body {
   border-left: 0;
   flex-grow: 1;
 }
-.contacts__content > .contacts__text {
+.contacts-content > .contacts-text {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -169,7 +169,7 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.contacts__content > .contacts__subtext {
+.contacts-content > .contacts-subtext {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -181,13 +181,13 @@ body {
   max-width: 265px;
 }
 
-.contacts__phones {
+.contacts-phones {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
-.contacts__phones > a {
+.contacts-phones > a {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -203,13 +203,13 @@ body {
   margin-top: 180px;
 }
 
-.achivs__container {
+.achivs-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.achivs__title {
+.achivs-title {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-weight: 600;
   font-size: 52px;
@@ -221,16 +221,16 @@ body {
   margin-bottom: 40px;
 }
 
-.spacer__achivs {
+.spacer-achivs {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.spacer__achivs > .spacer {
+.spacer-achivs > .spacer {
   margin-bottom: 60px;
 }
 
-.achivs__subtitle {
+.achivs-subtitle {
   font-family: "ReformaGroteskMediumC", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -241,13 +241,13 @@ body {
   max-width: 526px;
 }
 
-.achivs__wins {
+.achivs-wins {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.achivs__item {
+.achivs-item {
   border: 1px solid #898989;
   padding: 24px 20px 34px 20px;
 }
@@ -267,7 +267,7 @@ body {
   font-size: 24px;
 }
 
-.place__desc {
+.place-desc {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -280,19 +280,19 @@ body {
   max-width: 277px;
 }
 
-.achivs__second__col {
+.achivs-second__col {
   margin-top: 40px;
 }
 
-.achivs__item2 {
+.achivs-item2 {
   border-left: 0;
 }
 
-.achivs__item2:last-child {
+.achivs-item2:last-child {
   border-left: 1px solid #898989;
   padding-top: 13px;
 }
-.achivs__item2:last-child > .place__desc {
+.achivs-item2:last-child > .place-desc {
   margin-top: 22px;
 }
 
@@ -384,7 +384,7 @@ body {
   margin-top: 250px;
 }
 
-.footer__container {
+.footer-container {
   padding-top: 34px;
   padding-bottom: 34px;
   display: flex;
@@ -393,7 +393,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.footer__container > p {
+.footer-container > p {
   font-family: "ReformaGroteskDemiC", sans-serif;
   font-style: style;
   font-weight: 600;
@@ -405,7 +405,7 @@ body {
   opacity: 0.5;
 }
 
-.footer__item {
+.footer-item {
   font-family: "ReformaGroteskMediumC", sans-serif;
   font-style: style;
   font-weight: 500;
@@ -420,9 +420,9 @@ body {
   gap: 40px;
 }
 
-.footer__link {
+.footer-link {
   transition: color 0.2s ease-in-out;
 }
-.footer__link:hover {
+.footer-link:hover {
   color: #DB3138;
 }/*# sourceMappingURL=style.css.map */

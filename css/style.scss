@@ -34,16 +34,16 @@ body {
     background-repeat: no-repeat;
 }
 
-.header__nav {
+.header-nav {
     margin-top: 40px;
 }
 
-.header__item {
+.header-item {
     @include setfont($FF-MediumC, normal, 500, 24px, 120%, 0.03em);
     @include flexbox(row, center, center, 40px);
 }
 
-.header__link {
+.header-link {
     transition: color .2s ease-in-out;
 
     &:hover {
@@ -51,16 +51,16 @@ body {
     }
 }
 
-.intro__center {
+.intro-center {
     @include flexbox(column, center, center, null);
     margin-top: 158px;
 }
 
-.title {
+.intro-title {
     @include title(150px);
 }
 
-.spacer__container {
+.spacer-container {
     @include flexbox(row, center, center, 30px);
 }
 
@@ -127,7 +127,7 @@ body {
     }
 }
 
-.subtitle {
+.intro-subtitle {
     @include subtitle;
     margin-bottom: 40px;
     text-align: center;
@@ -138,25 +138,25 @@ body {
     margin-top: 103px;
 }
 
-.contacts__container {
+.contacts-container {
     @include flexbox(row, center, center, null);
 }
 
-.contacts__content {
+.contacts-content {
     @include flexbox(column, null, center, null);
     padding: 50px 50px;
     border: 1px solid #ffffff50;
     border-left: 0;
     flex-grow: 1;
 
-    >.contacts__text {
+    >.contacts-text {
         @include setfont($FF-DemiC, normal, 600, 18px, 140%, 0.05em);
         color: $txt-primary-color;
         margin-bottom: 20px;
         text-transform: uppercase;
     }
 
-    >.contacts__subtext {
+    >.contacts-subtext {
         @include setfont($FF-DemiC, normal, 600, 24px, 140%, 0.05em);
         color: $txt-secondary-color;
         text-transform: uppercase;
@@ -164,7 +164,7 @@ body {
     }
 }
 
-.contacts__phones {
+.contacts-phones {
     @include flexbox(column, null, center, null);
 
     >a {
@@ -179,11 +179,11 @@ body {
     margin-top: 180px;
 }
 
-.achivs__container {
+.achivs-container {
     @include flexbox(row, null, null, null);
 }
 
-.achivs__title {
+.achivs-title {
     @include setfont($FF-DemiC, null, 600, 52px, 140%, 0.05em);
     color: $txt-primary-color;
     max-width: 636px;
@@ -191,7 +191,7 @@ body {
     margin-bottom: 40px;
 }
 
-.spacer__achivs {
+.spacer-achivs {
     @include flexbox(null, flex-start, null, null);
 
     >.spacer {
@@ -199,17 +199,17 @@ body {
     }
 }
 
-.achivs__subtitle {
+.achivs-subtitle {
     @include setfont($FF-MediumC, normal, 500, 24px, 120%, 0.03em);
     color: $txt-primary-color;
     max-width: 526px;
 }
 
-.achivs__wins {
+.achivs-wins {
     @include flexbox(row, null, null, null);
 }
 
-.achivs__item {
+.achivs-item {
     border: 1px solid #898989;
     padding: 24px 20px 34px 20px;
 }
@@ -225,7 +225,7 @@ body {
     }
 }
 
-.place__desc {
+.place-desc {
     @include setfont($FF-DemiC, normal, 600, 16px, 140%, 0.05em);
     color: $txt-primary-color;
     text-transform: uppercase;
@@ -233,19 +233,19 @@ body {
     max-width: 277px;
 }
 
-.achivs__second__col {
+.achivs-second__col {
     margin-top: 40px;
 }
 
-.achivs__item2 {
+.achivs-item2 {
     border-left: 0;
 }
 
-.achivs__item2:last-child {
+.achivs-item2:last-child {
     border-left: 1px solid #898989;
     padding-top: 13px;
 
-    >.place__desc {
+    >.place-desc {
         margin-top: 22px;
     }
 }
@@ -364,7 +364,7 @@ body {
 
 // FOOTER HERE
 
-.footer__container {
+.footer-container {
     padding-top: 34px;
     padding-bottom: 34px;
     @include flexbox(row, space-between, center, null);
@@ -377,12 +377,12 @@ body {
     }
 }
 
-.footer__item {
+.footer-item {
     @include setfont($FF-MediumC, style, 500, 24px, 120%, 0.03em);
     @include flexbox(row, center, center, 40px);
 }
 
-.footer__link {
+.footer-link {
     transition: color .2s ease-in-out;
 
     &:hover {
